@@ -20,3 +20,14 @@ if st.button("Predict"):
     species = ["Setosa", "Versicolor", "Virginica"]
 
     st.success("Predicted Flower: " + species[prediction[0]])
+
+    flower = species[prediction[0]]
+
+    if flower == "Setosa":
+        st.image("images/setosa.jpg", width=300)
+
+    elif flower == "Versicolor":
+        st.image("images/versicolor.jpg", width=300)
+
+    else:
+        st.image("images/virginica.jpg", width=300)
